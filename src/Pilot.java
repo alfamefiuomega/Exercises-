@@ -1,10 +1,12 @@
 import java.util.HashMap;
 import java.util.Map;
 
+@SuppressWarnings("unused")
 public class Pilot {
+    @SuppressWarnings("WeakerAccess")
     Map<String, Button> buttons;
 
-    public void Pilot() {
+    public Pilot() {
         this.buttons = createButtons();
     }
 
