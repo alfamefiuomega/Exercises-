@@ -1,2 +1,2 @@
-public class MuteButton {
+public class MuteButton extends Button{
 }

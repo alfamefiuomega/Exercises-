@@ -1,2 +1,2 @@
-public class Button {
+public abstract class Button {
 }
