@@ -15,8 +15,11 @@ public class Pilot {
 
         //TODO: wrzuć do mapy button'ów jakieś buttony ;)
         Button muteButton = new MuteButton();
+        Button scrollButton = new ScrollButton();
+        Button onOffButton = new OnOffButton();
+        Button chanelButton = new ChanelButton();
+
         return buttons;
     }
-
 
 }

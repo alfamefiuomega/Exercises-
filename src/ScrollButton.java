@@ -1,4 +1,4 @@
-public class MuteButton extends Button {
+public class ScrollButton extends Button {
 
     @Override
     public void onClick() {
