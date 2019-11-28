@@ -2,9 +2,6 @@ public class ChanelButton extends Button {
     private int programNumber;
     private Integer canal;
 
-    public int getProgramNumber() {
-        return programNumber;
-    }
 
     public void setProgramNumber(int programNumber) {
         this.programNumber = programNumber;
