@@ -1,7 +1,8 @@
 public class ScrollButton extends Button {
 
+
     @Override
-    public int onClick() {
-        return 0;
+    public <T> T onClick() {
+        return null;
     }
 }
