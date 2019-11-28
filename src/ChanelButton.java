@@ -1,5 +1,6 @@
 public class ChanelButton extends Button {
-    int programNumber;
+    private int programNumber;
+    private Integer canal;
 
     public int getProgramNumber() {
         return programNumber;
@@ -9,12 +10,8 @@ public class ChanelButton extends Button {
         this.programNumber = programNumber;
     }
 
+
     @Override
-    public <T> T onClick() {
-        return null;
-    }
-}
-  /* @Override
     public <T> T onClick() {
 
         switch (programNumber) {
@@ -34,4 +31,8 @@ public class ChanelButton extends Button {
             }
 
         }
-        return getProgramNumber(); */
+        {
+            return (T) canal;
+        }
+    }
+}

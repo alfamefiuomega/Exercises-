@@ -1,7 +1,6 @@
 public class MuteButton extends Button {
 
-
-    Boolean muteOnOff = false;
+   private Boolean muteOnOff = false;
 
     public Boolean getMuteOnOff() {
         return muteOnOff;
@@ -10,7 +9,6 @@ public class MuteButton extends Button {
     public void setMuteOnOff(Boolean muteOnOff) {
         this.muteOnOff = muteOnOff;
     }
-
 
     @Override
     public <T> T onClick() {

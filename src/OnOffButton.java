@@ -1,6 +1,6 @@
 public class OnOffButton extends Button {
 
-    Boolean onOff = false;
+   private Boolean onOff = false;
 
     public Boolean getOnOff() {
         return onOff;
