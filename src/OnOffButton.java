@@ -14,7 +14,7 @@ public class OnOffButton extends Button {
     @Override
     public <T> T onClick() {
         onOff=!onOff;
-        setOnOff(onOff);
-        return (T) getOnOff();
+
+        return (T) onOff;
     }
 }

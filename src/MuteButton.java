@@ -13,8 +13,8 @@ public class MuteButton extends Button {
     @Override
     public <T> T onClick() {
         muteOnOff =!muteOnOff;
-        setMuteOnOff(muteOnOff);
-        return (T) getMuteOnOff();
+
+        return (T) muteOnOff;
     }
 }
 
