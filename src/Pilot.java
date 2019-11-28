@@ -10,6 +10,10 @@ public class Pilot {
         this.buttons = createButtons();
     }
 
+    public Map<String, Button> getButtons() {
+        return buttons;
+    }
+
     private Map<String, Button> createButtons() {
         Map<String, Button> buttons = new HashMap<>();
 
@@ -17,11 +21,11 @@ public class Pilot {
         Button muteButton = new MuteButton();
         Button scrollButton = new ScrollButton();
         Button onOffButton = new OnOffButton();
-        Button chanelButton1 = new ChanelButton(1);
-        Button chanelButton2 = new ChanelButton(2);
-        Button chanelButton3 = new ChanelButton(3);
+        Button chanelButton1 = new ChanelButton();
+        Button chanelButton2 = new ChanelButton();
+        Button chanelButton3 = new ChanelButton();
 
-        buttons.put("mute",muteButton);
+        buttons.put("mute", muteButton);
         buttons.put("scroll", scrollButton);
         buttons.put("onOff", onOffButton);
         buttons.put("1", chanelButton1);
@@ -31,4 +35,11 @@ public class Pilot {
         return buttons;
     }
 
+
+    public static void main(String[] args) {
+        Pilot pilot = new Pilot();
+        pilot.buttons = pilot.createButtons();
+
+
+    }
 }

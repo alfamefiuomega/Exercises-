@@ -1,32 +1,35 @@
-import java.util.Scanner;
-
 public class ChanelButton extends Button {
 
-    Scanner scan = new Scanner(System.in);
-    Pilot pilot = new Pilot();
+    int programNumber;
 
-    public ChanelButton(int chanel) {
-        this.onClick();
+    public int getProgramNumber() {
+        return programNumber;
+    }
+
+    public void setProgramNumber(int programNumber) {
+        this.programNumber = programNumber;
     }
 
     @Override
-    public void onClick() {
+    public <T> T onClick() {
 
-        switch (scan.nextInt()) {
+        switch (programNumber) {
 
             case 1: {
-                pilot.buttons.get("1");
-                System.out.println("1");
+                setProgramNumber(1);
+                break;
             }
             case 2: {
-                pilot.buttons.get("2");
-                System.out.println("2");
+                setProgramNumber(2);
+                break;
+
             }
             case 3: {
-                pilot.buttons.get("3");
-                System.out.println("3");
+                setProgramNumber(3);
+                break;
             }
-
         }
+        return getProgramNumber();
+
     }
 }
